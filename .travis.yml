@@ -2,8 +2,6 @@ language: csharp
 solution: src/Epicoin/Epicoin.sln
 mono:
   - latest
-install:
-  - nuget restore src/Epicoin/Epicoin.sln
 script:    
   - git pull
   - git fetch --all
