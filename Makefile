@@ -35,4 +35,10 @@ build: clean check
 	$(shell make clean-build)
 
 dependency: update
-	@cd $(CURRENT_DIR)$(DEPENDENCY_DIR) && make && make build
+	@cd $(CURRENT_DIR)$(DEPENDENCY_DIR)
+	mkdir -p $(CURRENT_DIR)$(DEPENDENCY_DIR)$(BIN_DIR)
+	nuget restore $(CURRENT_DIR)$(DEPENDENCY_DIR)src/Epicoin/Epicoin.sln
+	@cd $(CURRENT_DIR)$(DEPENDENCY_DIR)src/Epicoin/ && msbuild /p:Configuration=Debug /v:m && msbuild /p:Configuration=Release /v:m
+	@cd $(CURRENT_DIR)$(DEPENDENCY_DIR)
+	cp -r $(CURRENT_DIR)$(DEPENDENCY_DIR)src/Epicoin/bin/* $(CURRENT_DIR)$(DEPENDENCY_DIR)$(BIN_DIR)
+	rm -rf $(CURRENT_DIR)$(DEPENDENCY_DIR)$(BIN_DIR)Release/*.xml
