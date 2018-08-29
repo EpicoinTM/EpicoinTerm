@@ -1,8 +1,10 @@
 # EpicoinTerm (CLI)
 
-Code quality : [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d5c88337d7884bd1a545c7d6cacd33c2)](https://www.codacy.com/app/EpicoinTM/EpicoinTerm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EpicoinTM/EpicoinTerm&amp;utm_campaign=Badge_Grade)     
+[![Discord](https://img.shields.io/discord/484425384360935481.svg)](https://discord.gg/NHrm2fc)    
 
 ### Build Status
+
+Code quality : [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d5c88337d7884bd1a545c7d6cacd33c2)](https://www.codacy.com/app/EpicoinTM/EpicoinTerm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EpicoinTM/EpicoinTerm&amp;utm_campaign=Badge_Grade) 
 
 | Branch | Status |
 |--------|--------|
